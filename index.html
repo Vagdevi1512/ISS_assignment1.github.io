@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" id="theme-stylesheet" href="light.css">
+    <link rel="stylesheet" id="theme-stylesheet" href="dark.css">
+    <link rel="stylesheet" href="1.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Vagdevi</h1>
+    </header>
+
+    <nav>
+        <a href="#about" onclick="showContent('about')">About</a>
+        <a href="#profile-image" onclick="showContent('profile-image')">Profile Image</a>
+        <a href="#education" onclick="showContent('education')">Education</a>
+        <a href="#achievements" onclick="showContent('achievements')">Achievements</a>
+        <a href="#skills" onclick="showContent('skills')">Skills</a>
+        <a href="#blog" onclick="showContent('blog')">Blog</a>
+    </nav>
+
+    <section id="about" class="hidden">
+        <h2>About Yourself</h2>
+        <p>Hello I am vagdevi</p>
+    </section>
+
+    <section id="profile-image" class="hidden">
+        <h2>Profile Image</h2>
+        <img src="vaguu1.jpeg" alt="Your Profile Image">
+    </section>
+
+    <section id="education" class="hidden">
+        <h2>Education Background</h2>
+        <p>New Vision(2015-2018)</p>
+        <p>Narayana(2018-2023)</p>
+        <p>IIIT Hyderabad(2023-2027)</p>
+    </section>
+
+    <section id="achievements" class="hidden">
+        <h2>Achievements</h2>
+        <p>Mains percentile:99.72</p>
+        <p>Advanced Rank: 4512</p>
+    </section>
+
+    <section id="skills" class="hidden">
+        <h2>Skills</h2>
+        <p>Swimming</p>
+    </section>
+
+    <section id="blog" class="hidden">
+        <h2>Blogs</h2>
+
+        <div class="blog">
+            <h3><a href="blog1.html" target="_blank">Ice creams</a></h3>
+            <button id="likeButton1" onclick="handleLike(1)">Like</button>
+            <button id="commentButton1" onclick="toggleCommentForm(1)">Comment</button>
+            <div class="like-counter">Likes: <span id="likeCounter1">0</span></div>
+            <div class="comments" id="commentsContainer1">
+                <h4>Comments:</h4>
+                <ul id="commentList1"></ul>
+                <form id="commentForm1" onsubmit="addComment(1, event)">
+                    <input type="text" placeholder="Add a comment" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="blog">
+            <h3><a href="blog2.html" target="_blank">Cats</a></h3>
+            <button id="likeButton2" onclick="handleLike(2)">Like</button>
+            <button id="commentButton2" onclick="toggleCommentForm(2)">Comment</button>
+            <div class="like-counter">Likes: <span id="likeCounter2">0</span></div>
+            <div class="comments" id="commentsContainer2">
+                <h4>Comments:</h4>
+                <ul id="commentList2"></ul>
+                <form id="commentForm2" onsubmit="addComment(2, event)">
+                    <input type="text" placeholder="Add a comment" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://github.com/Vagdevi1512/ISS_demo" target="_blank" title="GitHub" class="github"
+        style="text-align: center;"><img src="GitHub.jpeg" alt="GitHub">
+        <a>
+
+            <a href="mailto:vagdevi1125@gmail.com" title="Email" class="email" style="text-align: center;"><img
+                    src="email.jpeg"
+                    alt="Email">
+            </a>
+
+            <a href="https://www.instagram.com/vagdevi_reddy15/?next=%2F" target="_blank" class="instagram"
+                style="text-align: center;">
+                <img src="Instagram.jpeg" alt="Instagram"></a>
+            <a href="Resume.pdf" target="_blank" style="text-align: center;">Resume</a>
+
+            <button id="theme-toggle" class="toggle" style="text-align:center ;">Toggle</button>
+
+            <script src="toggle.js"></script>
+            <script src="1.js"></script>
+
+</body>
+
+</html>
